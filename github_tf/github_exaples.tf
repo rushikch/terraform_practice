@@ -11,5 +11,10 @@ resource "github_repository" "terraform_practice" {
   # }
 }
 
+resource "github_branch" "development" {
+  repository = "terraform_practice"
+  branch     = "development"
+}
+
 
 
